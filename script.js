@@ -21,3 +21,16 @@ while (no != 0) {
   no = parseInt(no / 10);
 }
 document.write(rev);
+//Write a function that checks whether an element occurs in a list.
+let array = [12, 5, 8, 3, 17];
+
+let search = 8; //Element to be searched
+let flag = 0;
+
+for (var i = 0; i < array.length; i++) {
+  if (search == array[i]) flag = 1;
+}
+//flag == 1 means searched value found
+if (flag == 1) document.write('searched element found');
+//searched value not found
+else document.write('searched element not found');
