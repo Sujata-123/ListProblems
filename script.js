@@ -70,3 +70,10 @@ const newList = () => {
   return list;
 };
 document.write(newList(arr1, arr2));
+
+// Write a function that merges two sorted lists into a new sorted list.
+const arr1 = [3, 5, 6, 10, 11, 20];
+const arr2 = [1, 2, 7, 8, 15, 19];
+//in this solution why I am writing a-b , because I am arranging this merged list in asscending order
+//if I am writing it b-a that means I am arranging it in descending order.
+document.write(arr1.concat(arr2).sort((a,b) => a-b))
