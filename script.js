@@ -18,7 +18,6 @@ document.write(odd);
 let arr = [1, 2, 3, 4, 5, 6];
 document.write(arr.filter(ele => ele === 5));
 
-
 // Write a function that concatenates two lists.
 let arr1 = [1, 2, 3, 4];
 let arr2 = [101, 2, 1, 10];
@@ -50,9 +49,6 @@ const newList = () => {
 };
 document.write(newList(arr1, arr2));
 
-
-
-
 // Write a function that tests whether a string is a palindrome.
 const Palindrome = () => {
   // convert string to an array
@@ -80,4 +76,11 @@ const arr1 = [3, 5, 6, 10, 11, 20];
 const arr2 = [1, 2, 7, 8, 15, 19];
 //in this solution why I am writing a-b , because I am arranging this merged list in asscending order
 //if I am writing it b-a that means I am arranging it in descending order.
-document.write(arr1.concat(arr2).sort((a,b) => a-b))
+document.write(arr1.concat(arr2).sort((a, b) => a - b));
+
+// Write a function that takes a number and returns a list of its digits. So for 2342 it should return [2,3,4,2]
+
+const num=prompt('Enter no');
+let res=num.split('')
+let result = res.map(a=>parseInt(a))
+document.write(result)
