@@ -1,5 +1,3 @@
-
-
 //List problems using array built in method
 
 // Write function that reverses a list, preferably in place.
@@ -20,7 +18,7 @@ document.write(odd);
 let arr = [1, 2, 3, 4, 5, 6];
 document.write(arr.filter(ele => ele === 5));
 // Write a function that tests whether a string is a palindrome.
-const Palindrome =()=>{
+const Palindrome = () => {
   // convert string to an array
   const arrayValues = string.split('');
 
@@ -35,7 +33,7 @@ const Palindrome =()=>{
   } else {
     document.write('It is not a palindrome');
   }
-}
+};
 
 //take input
 //const string = prompt('Enter a string: ');
@@ -54,3 +52,21 @@ const newArr = oldArr.map(function(cvalue, i) {
   return i + cvalue;
 });
 document.write(newArr);
+
+// Write a function that returns the largest element in a list.
+a = [5, 7, 2, 11, 4, 3];
+max = Math.max(...a);
+document.write(max);
+
+// Write a function that combines two lists by alternatingly taking elements
+const arr1 = ['a', 'b', 'c'];
+const arr2 = [1, 2, 3];
+const newList = () => {
+  var list = [];
+  for (let i = 0; i < arr1.length; ++i) {
+    list.push(arr1[i]);
+    list.push(arr2[i]);
+  }
+  return list;
+};
+document.write(newList(arr1, arr2));
