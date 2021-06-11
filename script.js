@@ -17,28 +17,7 @@ document.write(odd);
 //document.write(arr.indexOf(5))
 let arr = [1, 2, 3, 4, 5, 6];
 document.write(arr.filter(ele => ele === 5));
-// Write a function that tests whether a string is a palindrome.
-const Palindrome = () => {
-  // convert string to an array
-  const arrayValues = string.split('');
 
-  // reverse the array values
-  const reversed = arrayValues.reverse();
-
-  // convert array to string
-  const reverseString = reversed.join('');
-
-  if (string == reverseString) {
-    document.write('It is a palindrome');
-  } else {
-    document.write('It is not a palindrome');
-  }
-};
-
-//take input
-//const string = prompt('Enter a string: ');
-
-Palindrome(string);
 
 // Write a function that concatenates two lists.
 let arr1 = [1, 2, 3, 4];
@@ -71,6 +50,31 @@ const newList = () => {
 };
 document.write(newList(arr1, arr2));
 
+
+
+
+// Write a function that tests whether a string is a palindrome.
+const Palindrome = () => {
+  // convert string to an array
+  const arrayValues = string.split('');
+
+  // reverse the array values
+  const reversed = arrayValues.reverse();
+
+  // convert array to string
+  const reverseString = reversed.join('');
+
+  if (string == reverseString) {
+    document.write('It is a palindrome');
+  } else {
+    document.write('It is not a palindrome');
+  }
+};
+
+//take input
+//const string = prompt('Enter a string: ');
+
+Palindrome(string);
 // Write a function that merges two sorted lists into a new sorted list.
 const arr1 = [3, 5, 6, 10, 11, 20];
 const arr2 = [1, 2, 7, 8, 15, 19];
