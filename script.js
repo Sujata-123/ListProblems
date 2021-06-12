@@ -1,4 +1,4 @@
-//List problems using array built in method
+// Array problems using array built in method
 
 // Write function that reverses a list, preferably in place.
 const array1 = [1, 2, 3, 4];
