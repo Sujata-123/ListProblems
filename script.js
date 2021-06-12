@@ -84,3 +84,20 @@ const num = prompt('Enter no');
 let res = num.split('');
 let result = res.map(a => parseInt(a));
 document.write(result);
+
+//Write a function that computes the list of the first 100 Fibonacci numbers. The first two Fibonacci numbers are 1 and 1. The n+1-st Fibonacci number can be computed by adding the n-th and the n-1-th Fibonacci number.
+let Fibonac = (fib)=> 
+{
+  if (fib===1) 
+  {
+    return [0, 1];
+  } 
+  else 
+  {
+    let res = Fibonac(fib - 1);
+    res.push(res[res.length - 1] + res[res.length - 2]);
+    return res;
+  }
+};
+
+ document.write(Fibonac(100));
