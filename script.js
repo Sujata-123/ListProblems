@@ -24,12 +24,7 @@ let arr2 = [101, 2, 1, 10];
 let arr1_arr2 = arr1.concat(arr2);
 document.write(arr1_arr2);
 
-//Write a function that computes the running total of a list.
-const oldArr = [1, 2, 3, 4, 7];
-const newArr = oldArr.map(function(cvalue, i) {
-  return i + cvalue;
-});
-document.write(newArr);
+
 
 // Write a function that returns the largest element in a list.
 a = [5, 7, 2, 11, 4, 3];
@@ -68,7 +63,7 @@ const Palindrome = () => {
 };
 
 //take input
-//const string = prompt('Enter a string: ');
+const string = prompt('Enter a string: ');
 
 Palindrome(string);
 // Write a function that merges two sorted lists into a new sorted list.
