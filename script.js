@@ -85,7 +85,7 @@ let Fibonac = (fib)=>
 {
   if (fib===1) 
   {
-    return [0, 1];
+    return [1, 1];
   } 
   else 
   {
@@ -120,6 +120,7 @@ document.write(arr)
 
 
 //Write a function that computes the running total of a list.
+
 //using forOf loop
 // const list=[1,-1,2,3]
 // let sum=0;
@@ -130,9 +131,20 @@ document.write(arr)
 // reduce method have two argument on is call back function and second one is accumulator
 //initially the value of accumulator is 0 
 // we get result as single value
-
+//Write three functions that compute the sum of the numbers in a list
 const lst=[1,2,3,4,5]
 const sum=lst.reduce((accumulator,currentValue)=>{
   return accumulator+currentValue
 },0);
 document.write(sum)
+
+
+// Write a function on_all that applies a function to every element of a list. Use it to print the first twenty perfect squares.
+const lst = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+const square = lst.map(x => x ** 2);
+
+document.write(square);
+
+
+
