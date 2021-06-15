@@ -117,3 +117,22 @@ for(let i=0;i<k;i++)
    arr.push(arr.shift())
 }
 document.write(arr)
+
+
+//Write a function that computes the running total of a list.
+//using forOf loop
+// const list=[1,-1,2,3]
+// let sum=0;
+// for(let n of list)
+// sum+=n;
+// document.write(sum)
+//We can do sum by uisng reduce() method 
+// reduce method have two argument on is call back function and second one is accumulator
+//initially the value of accumulator is 0 
+// we get result as single value
+
+const lst=[1,2,3,4,5]
+const sum=lst.reduce((accumulator,currentValue)=>{
+  return accumulator+currentValue
+},0);
+document.write(sum)
